@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>font_body</key>
+	<dict>
+		<key>name</key>
+		<string></string>
+		<key>weight</key>
+		<string></string>
+		<key>size</key>
+		<integer>0</integer>
+		<key>color</key>
+		<string></string>
+		<key>align</key>
+		<string></string>
+		<key>paragraph</key>
+		<dict>
+			<key>lineSpacing</key>
+			<integer>0</integer>
+			<key>spacing</key>
+			<integer>0</integer>
+			<key>alignment</key>
+			<string>left</string>
+			<key>firstLineHeadIndent</key>
+			<integer>0</integer>
+			<key>headIndent</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

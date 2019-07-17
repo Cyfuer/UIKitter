@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "UIView+ColorAndFont.h"
+#import "UILabel+ColorAndFont.h"
+
+#define aaaa(key) test_key
 
 @interface AppDelegate ()
 
@@ -17,7 +21,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self performSelector:@selector(aaaa(name))];
     return YES;
+}
+
+- (void)test_name {
+    NSLog(@"testname");
 }
 
 
