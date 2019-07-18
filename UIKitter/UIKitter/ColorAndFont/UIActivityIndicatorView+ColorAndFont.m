@@ -13,12 +13,12 @@
 @implementation UIActivityIndicatorView(ColorAndFont)
 
 - (void)setKt_color:(NSString *)kt_color {
-    objc_setAssociatedObject(self, @selector(kt_color), kt_color, OBJC_ASSOCIATION_COPY);
+    KT_SET_COPY_ASSOCIATED(kt_color);
     self.color = kt_kitterColor(kt_color);
 }
 
 - (NSString *)kt_color {
-    return objc_getAssociatedObject(self, @selector(kt_color));
+    return KT_GET_COPY_ASSOCIATED(kt_color);
 }
 
 @end

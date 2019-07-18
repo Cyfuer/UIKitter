@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIProgressView (ColorAndFont)
 
-@property (nonatomic, copy) NSString *kt_progressTintColor;
-@property (nonatomic, copy) NSString *kt_trackTintColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_progressTintColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_trackTintColor;
 @end
 
 NS_ASSUME_NONNULL_END

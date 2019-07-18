@@ -13,12 +13,12 @@
 @implementation UIImageView(ColorAndFont)
 
 - (void)setKt_tintColor:(NSString *)kt_tintColor {
-    objc_setAssociatedObject(self, @selector(kt_tintColor), kt_tintColor, OBJC_ASSOCIATION_COPY);
+    KT_SET_COPY_ASSOCIATED(kt_tintColor);
     self.tintColor = kt_kitterColor(kt_tintColor);
 }
 
 - (NSString *)kt_tintColor {
-    return objc_getAssociatedObject(self, @selector(kt_tintColor));
+    return KT_GET_COPY_ASSOCIATED(kt_tintColor);
 }
 
 @end

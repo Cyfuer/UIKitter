@@ -9,8 +9,7 @@
 #import "AppDelegate.h"
 #import "UIView+ColorAndFont.h"
 #import "UILabel+ColorAndFont.h"
-
-#define aaaa(key) test_key
+#import "UIButton+ColorAndFont.h"
 
 @interface AppDelegate ()
 
@@ -21,14 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self performSelector:@selector(aaaa(name))];
     return YES;
 }
-
-- (void)test_name {
-    NSLog(@"testname");
-}
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

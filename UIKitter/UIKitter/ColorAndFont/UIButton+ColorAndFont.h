@@ -13,11 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (ColorAndFont)
 
-@property (nonatomic, copy) NSString *kt_font;
-@property (nonatomic, copy) NSString *kt_tintColor;
-@property (nonatomic, copy) NSString *kt_normalTitleColor;
-@property (nonatomic, copy) NSString *kt_selectTitleColor;
-@property (nonatomic, copy) NSString *kt_titleShadowColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_normalTitle;
+@property (nonatomic, copy) IBInspectable NSString *kt_selectTitle;
+
+@property (nonatomic, copy) IBInspectable NSString *kt_font;
+@property (nonatomic, copy) IBInspectable NSString *kt_tintColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_normalTitleColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_selectTitleColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_normalTitleShadowColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_selectTitleShadowColor;
 @end
 
 NS_ASSUME_NONNULL_END

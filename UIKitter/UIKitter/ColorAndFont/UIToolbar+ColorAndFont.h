@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIToolbar (ColorAndFont)
 
-@property (nonatomic, copy) NSString *kt_tintColor;
-@property (nonatomic, copy) NSString *kt_barTintColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_tintColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_barTintColor;
 
 @end
 

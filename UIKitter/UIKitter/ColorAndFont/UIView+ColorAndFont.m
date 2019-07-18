@@ -13,21 +13,21 @@
 @implementation UIView(ColorAndFont)
 
 - (void)setKt_backgroundColor:(NSString *)kt_backgroundColor {
-    objc_setAssociatedObject(self, @selector(kt_backgroundColor), kt_backgroundColor, OBJC_ASSOCIATION_COPY);
+    KT_SET_COPY_ASSOCIATED(kt_backgroundColor);
     self.backgroundColor = kt_kitterColor(kt_backgroundColor);
 }
 
 - (NSString *)kt_backgroundColor {
-    return objc_getAssociatedObject(self, @selector(kt_backgroundColor));
+    return KT_GET_COPY_ASSOCIATED(kt_backgroundColor);
 }
 
 - (void)setKt_tintColor:(NSString *)kt_tintColor {
-    objc_setAssociatedObject(self, @selector(kt_tintColor), kt_tintColor, OBJC_ASSOCIATION_COPY);
+    KT_SET_COPY_ASSOCIATED(kt_tintColor);
     self.tintColor = kt_kitterColor(kt_tintColor);
 }
 
 - (NSString *)kt_tintColor {
-    return objc_getAssociatedObject(self, @selector(kt_tintColor));
+    return KT_GET_COPY_ASSOCIATED(kt_tintColor);
 }
 
 @end

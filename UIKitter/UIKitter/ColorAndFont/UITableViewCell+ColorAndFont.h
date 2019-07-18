@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableViewCell (ColorAndFont)
 
-@property (nonatomic, copy) NSString *kt_textColor;
-@property (nonatomic, copy) NSString *kt_selectedTextColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_textColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_selectedTextColor;
 @end
 
 NS_ASSUME_NONNULL_END
