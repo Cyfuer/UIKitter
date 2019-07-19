@@ -10,6 +10,7 @@
 #import "UIView+ColorAndFont.h"
 #import "UILabel+ColorAndFont.h"
 #import "UIButton+ColorAndFont.h"
+#import "UIPageControl+ColorAndFont.h"
 
 @interface AppDelegate ()
 

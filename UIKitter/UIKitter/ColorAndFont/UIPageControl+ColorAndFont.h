@@ -11,7 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIPageControl_ColorAndFont : NSObject
+@interface UIPageControl (ColorAndFont)
+
+@property (nonatomic, copy) IBInspectable NSString *kt_tintColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_currentTintColor;
 
 @end
 
