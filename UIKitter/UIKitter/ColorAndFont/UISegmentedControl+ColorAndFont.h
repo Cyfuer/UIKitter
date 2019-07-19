@@ -11,7 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UISegmentedControl_ColorAndFont : NSObject
+@interface UISegmentedControl (ColorAndFont)
+
+@property (nonatomic, copy) IBInspectable NSString *kt_tintColor;
 
 @end
 

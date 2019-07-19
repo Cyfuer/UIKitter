@@ -15,8 +15,8 @@
 		7DE6A9A822DDB50B0040A645 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6A9A722DDB50B0040A645 /* main.m */; };
 		7DE6A9B222DDB50B0040A645 /* UIKitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6A9B122DDB50B0040A645 /* UIKitterTests.m */; };
 		7DE6A9BD22DDB50B0040A645 /* UIKitterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6A9BC22DDB50B0040A645 /* UIKitterUITests.m */; };
-		7DE6A9CF22DDB8540040A645 /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DE6A9CE22DDB8540040A645 /* Colors.plist */; };
-		7DE6A9D122DDB8600040A645 /* Fonts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DE6A9D022DDB8600040A645 /* Fonts.plist */; };
+		7DE6A9CF22DDB8540040A645 /* KitterColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DE6A9CE22DDB8540040A645 /* KitterColors.plist */; };
+		7DE6A9D122DDB8600040A645 /* KitterFonts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DE6A9D022DDB8600040A645 /* KitterFonts.plist */; };
 		7DE6A9D422DDBA210040A645 /* UIView+ColorAndFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6A9D322DDBA210040A645 /* UIView+ColorAndFont.m */; };
 		7DE6A9FD22DDCAC00040A645 /* UIImageView+ColorAndFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6A9F522DDCABF0040A645 /* UIImageView+ColorAndFont.m */; };
 		7DE6A9FE22DDCAC00040A645 /* UILabel+ColorAndFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6A9F622DDCABF0040A645 /* UILabel+ColorAndFont.m */; };
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D40F91122E163A600162504 /* KitterColorAndFontMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitterColorAndFontMacro.h; sourceTree = "<group>"; };
 		7DE6A99522DDB50A0040A645 /* UIKitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE6A99822DDB50A0040A645 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DE6A99922DDB50A0040A645 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,11 +71,11 @@
 		7DE6A9BC22DDB50B0040A645 /* UIKitterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitterUITests.m; sourceTree = "<group>"; };
 		7DE6A9BE22DDB50B0040A645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DE6A9CC22DDB7A50040A645 /* UIKitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitter.h; sourceTree = "<group>"; };
-		7DE6A9CE22DDB8540040A645 /* Colors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
-		7DE6A9D022DDB8600040A645 /* Fonts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Fonts.plist; sourceTree = "<group>"; };
+		7DE6A9CE22DDB8540040A645 /* KitterColors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = KitterColors.plist; sourceTree = "<group>"; };
+		7DE6A9D022DDB8600040A645 /* KitterFonts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = KitterFonts.plist; sourceTree = "<group>"; };
 		7DE6A9D222DDBA210040A645 /* UIView+ColorAndFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorAndFont.h"; sourceTree = "<group>"; };
 		7DE6A9D322DDBA210040A645 /* UIView+ColorAndFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorAndFont.m"; sourceTree = "<group>"; };
-		7DE6A9D522DDBF160040A645 /* ColorAndFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorAndFont.h; sourceTree = "<group>"; };
+		7DE6A9D522DDBF160040A645 /* KitterColorAndFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitterColorAndFont.h; sourceTree = "<group>"; };
 		7DE6A9F122DDCABF0040A645 /* UILabel+ColorAndFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ColorAndFont.h"; sourceTree = "<group>"; };
 		7DE6A9F222DDCABF0040A645 /* UINavigationBar+ColorAndFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ColorAndFont.h"; sourceTree = "<group>"; };
 		7DE6A9F322DDCABF0040A645 /* UIToolbar+ColorAndFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+ColorAndFont.h"; sourceTree = "<group>"; };
@@ -199,9 +200,10 @@
 		7DE6A9CD22DDB8270040A645 /* ColorAndFont */ = {
 			isa = PBXGroup;
 			children = (
-				7DE6A9CE22DDB8540040A645 /* Colors.plist */,
-				7DE6A9D022DDB8600040A645 /* Fonts.plist */,
-				7DE6A9D522DDBF160040A645 /* ColorAndFont.h */,
+				7DE6A9CE22DDB8540040A645 /* KitterColors.plist */,
+				7DE6A9D022DDB8600040A645 /* KitterFonts.plist */,
+				7DE6A9D522DDBF160040A645 /* KitterColorAndFont.h */,
+				7D40F91122E163A600162504 /* KitterColorAndFontMacro.h */,
 				7DE6A9D222DDBA210040A645 /* UIView+ColorAndFont.h */,
 				7DE6A9D322DDBA210040A645 /* UIView+ColorAndFont.m */,
 				7DE6A9F722DDCAC00040A645 /* UIActivityIndicatorView+ColorAndFont.h */,
@@ -341,8 +343,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE6A9CF22DDB8540040A645 /* Colors.plist in Resources */,
-				7DE6A9D122DDB8600040A645 /* Fonts.plist in Resources */,
+				7DE6A9CF22DDB8540040A645 /* KitterColors.plist in Resources */,
+				7DE6A9D122DDB8600040A645 /* KitterFonts.plist in Resources */,
 				7DE6A9A522DDB50B0040A645 /* LaunchScreen.storyboard in Resources */,
 				7DE6A9A222DDB50B0040A645 /* Assets.xcassets in Resources */,
 				7DE6A9A022DDB50A0040A645 /* Main.storyboard in Resources */,

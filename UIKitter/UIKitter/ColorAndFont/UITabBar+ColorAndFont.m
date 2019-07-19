@@ -7,7 +7,7 @@
 //
 
 #import "UITabBar+ColorAndFont.h"
-#import "ColorAndFont.h"
+#import "KitterColorAndFontMacro.h"
 #import <objc/runtime.h>
 
 @implementation UITabBar (ColorAndFont)
@@ -37,6 +37,15 @@
 
 - (NSString *)kt_unselectedItemTintColor {
     return KT_GET_COPY_ASSOCIATED(kt_unselectedItemTintColor);
+}
+
+- (void)setKt_selectedImageTintColor:(NSString *)kt_selectedImageTintColor {
+    KT_SET_COPY_ASSOCIATED(kt_selectedImageTintColor);
+    self.selectedImageTintColor = kt_kitterColor(kt_selectedImageTintColor);
+}
+
+- (NSString *)kt_selectedImageTintColor {
+    return KT_GET_COPY_ASSOCIATED(kt_selectedImageTintColor);
 }
 
 @end

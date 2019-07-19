@@ -7,7 +7,7 @@
 //
 
 #import "UIView+ColorAndFont.h"
-#import "ColorAndFont.h"
+#import "KitterColorAndFontMacro.h"
 #import <objc/runtime.h>
 
 @implementation UIView(ColorAndFont)

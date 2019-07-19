@@ -11,7 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UISwitch_ColorAndFont : NSObject
+@interface UISwitch (ColorAndFont)
+
+@property (nonatomic, copy) IBInspectable NSString *kt_onColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_color;
+@property (nonatomic, copy) IBInspectable NSString *kt_thumbColor;
 
 @end
 

@@ -11,7 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UISlider_ColorAndFont : NSObject
+@interface UISlider (ColorAndFont)
+
+@property (nonatomic, copy) IBInspectable NSString *kt_leftColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_rightColor;
+@property (nonatomic, copy) IBInspectable NSString *kt_thumbColor;
 
 @end
 

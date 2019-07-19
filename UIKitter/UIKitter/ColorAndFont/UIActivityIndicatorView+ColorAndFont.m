@@ -7,7 +7,7 @@
 //
 
 #import "UIActivityIndicatorView+ColorAndFont.h"
-#import "ColorAndFont.h"
+#import "KitterColorAndFontMacro.h"
 #import <objc/runtime.h>
 
 @implementation UIActivityIndicatorView(ColorAndFont)

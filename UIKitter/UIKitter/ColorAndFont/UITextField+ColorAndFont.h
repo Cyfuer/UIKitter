@@ -11,7 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITextField_ColorAndFont : NSObject
+@interface UITextField (ColorAndFont)
+
+@property (nonatomic, copy) IBInspectable NSString *kt_font;
+@property (nonatomic, copy) IBInspectable NSString *kt_textColor;
 
 @end
 

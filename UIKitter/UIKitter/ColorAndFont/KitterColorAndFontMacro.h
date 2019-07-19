@@ -1,13 +1,13 @@
 //
-//  ColorAndFont.h
+//  KitterColorAndFontMacro.h
 //  UIKitter
 //
-//  Created by Cyfuer on 2019/7/16.
+//  Created by Cyfuer on 2019/7/19.
 //  Copyright © 2019 Cyfuer. All rights reserved.
 //
 
-#ifndef ColorAndFont_h
-#define ColorAndFont_h
+#ifndef KitterColorAndFontMacro_h
+#define KitterColorAndFontMacro_h
 
 static NSInteger KTDefaultFontSize = 16;
 
@@ -42,18 +42,6 @@ static inline BOOL kt_isEmptyString(NSString *string) {
     else {
         return YES;
     }
-}
-
-static inline void setProperty(NSString *property) {
-    //    Ivar *ivars = class_copyIvarList(myClass, &outCount);
-    //    for (i = 0; i < outCount; i++) {
-    //        Ivar property = ivars[i];
-    //        NSString *keyName = [NSString stringWithCString:ivar_getName(property) encoding:NSUTF8StringEncoding];
-    //        keyName = [keyName stringByReplacingOccurrencesOfString:@"_" withString:@""];
-    //        if ([keyName isEqualToString:name]) {
-    //            return YES;
-    //        }
-    //    }
 }
 
 static inline UIColor *kt_colorWithRGBAStr(NSString *rgbaStr) {
@@ -120,7 +108,7 @@ static inline NSDictionary *kt_kitterColors() {
     static NSDictionary *kitterColors = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Colors" ofType:@"plist"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"KitterColors" ofType:@"plist"];
         kitterColors = [NSDictionary dictionaryWithContentsOfFile:path];
     });
     return kitterColors;
@@ -140,7 +128,7 @@ static inline NSDictionary *kt_kitterFonts() {
     static NSDictionary *kitterFonts = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Fonts" ofType:@"plist"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"KitterFonts" ofType:@"plist"];
         kitterFonts = [NSDictionary dictionaryWithContentsOfFile:path];
     });
     return kitterFonts;
@@ -154,14 +142,12 @@ static inline NSDictionary *kt_kitterFont(NSString *key) {
     return kt_kitterFonts()[key];
 }
 
-static inline NSDictionary *kt_attributedDict(NSString *key) {
+static inline UIFont * kt_fontWithKey(NSString *key) {
+    
     NSDictionary *fontDict = kt_kitterFont(key);
     if (!fontDict) {
         return nil;
     } else {
-        NSMutableDictionary *mutableAttributedDict = [NSMutableDictionary dictionary];
-        
-        // 字体格式及大小
         NSString *fontName = [fontDict objectForKey:KTFontKeyName];
         
         UIFont *font = nil;
@@ -195,7 +181,22 @@ static inline NSDictionary *kt_attributedDict(NSString *key) {
         } else {
             font = [UIFont fontWithName:fontName size:fontSize];
         }
-        [mutableAttributedDict setObject:font forKey:NSFontAttributeName];
+        return font;
+    }
+}
+
+static inline NSDictionary *kt_attributedDict(NSString *key) {
+    NSDictionary *fontDict = kt_kitterFont(key);
+    if (!fontDict) {
+        return nil;
+    } else {
+        NSMutableDictionary *mutableAttributedDict = [NSMutableDictionary dictionary];
+        
+        // 字体格式及大小
+        UIFont *font = kt_fontWithKey(key);
+        if (font) {
+            [mutableAttributedDict setObject:font forKey:NSFontAttributeName];
+        }
         
         // 字体颜色
         NSString *fontColorStr = [fontDict objectForKey:KTFontKeyColor];
@@ -275,4 +276,4 @@ static inline NSDictionary *kt_attributedDict(NSString *key) {
     }
 }
 
-#endif /* ColorAndFont_h */
+#endif /* KitterColorAndFontMacro_h */

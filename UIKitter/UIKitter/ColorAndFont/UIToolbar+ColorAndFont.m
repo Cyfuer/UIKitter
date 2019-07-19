@@ -7,7 +7,7 @@
 //
 
 #import "UIToolbar+ColorAndFont.h"
-#import "ColorAndFont.h"
+#import "KitterColorAndFontMacro.h"
 #import <objc/runtime.h>
 
 @implementation UIToolbar (ColorAndFont)

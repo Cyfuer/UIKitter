@@ -7,7 +7,7 @@
 //
 
 #import "UIPageControl+ColorAndFont.h"
-#import "ColorAndFont.h"
+#import "KitterColorAndFontMacro.h"
 #import <objc/runtime.h>
 
 @implementation UIPageControl (ColorAndFont)
