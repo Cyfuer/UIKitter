@@ -9,5 +9,6 @@
 #ifndef UIKitter_h
 #define UIKitter_h
 
+#import "KitterColorAndFont.h"
 
 #endif /* UIKitter_h */

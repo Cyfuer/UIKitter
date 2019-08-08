@@ -191,8 +191,8 @@
 		7DE6A9CB22DDB6E80040A645 /* UIKitter */ = {
 			isa = PBXGroup;
 			children = (
-				7DE6A9CD22DDB8270040A645 /* ColorAndFont */,
 				7DE6A9CC22DDB7A50040A645 /* UIKitter.h */,
+				7DE6A9CD22DDB8270040A645 /* ColorAndFont */,
 			);
 			path = UIKitter;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 		7DE6A9CD22DDB8270040A645 /* ColorAndFont */ = {
 			isa = PBXGroup;
 			children = (
+				7DE6A9D522DDBF160040A645 /* KitterColorAndFont.h */,
 				7DE6A9CE22DDB8540040A645 /* KitterColors.plist */,
 				7DE6A9D022DDB8600040A645 /* KitterFonts.plist */,
-				7DE6A9D522DDBF160040A645 /* KitterColorAndFont.h */,
 				7D40F91122E163A600162504 /* KitterColorAndFontMacro.h */,
 				7DE6A9D222DDBA210040A645 /* UIView+ColorAndFont.h */,
 				7DE6A9D322DDBA210040A645 /* UIView+ColorAndFont.m */,
